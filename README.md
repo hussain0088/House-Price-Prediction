@@ -1,11 +1,13 @@
 House-Price-Prediction
+
 This project focuses on building a highly accurate model for house price prediction using a deep learning approach implemented with TensorFlow. The goal is to estimate the final sale price of houses in King County, Washington (Seattle area), based on a comprehensive set of features.
 
 House Price Prediction using Artificial Neural Networks (ANN)
-Overview
+
 This project implements an Artificial Neural Network (ANN) using TensorFlow/Keras to predict house sale prices based on various features. The goal is to build a robust regression model capable of estimating a house's price given its attributes.
 
-Dataset
+1.Dataset
+
 The project utilizes the King County House Sales dataset (read from /content/kc_house_data.csv).
 
 Dataset Details
@@ -17,7 +19,8 @@ Target Variable: price.
 
 Key Features include: bedrooms, bathrooms, sqft_living, sqft_lot, floors, waterfront, view, condition, grade, yr_built, zipcode, lat, and long.
 
-Prerequisites (Dependencies)
+2.Prerequisites (Dependencies)
+
 To run this notebook, you will need the following Python libraries:
 
 numpy
@@ -30,7 +33,8 @@ scikit-learn (for scaling and train/test split)
 
 The libraries are imported in the notebook.
 
-Methodology and Steps
+3.Methodology and Steps
+
 The following steps outline the data processing and model development within the notebook:
 
 1. Data Loading and Initial Analysis
@@ -67,6 +71,7 @@ Metric: Mean Absolute Error (metrics=['mae']).
 Training: The model is trained for 100 epochs with a batch size of 128. A validation split of 0.2 is used to monitor performance on unseen data during training.
 
 4. Evaluation and Prediction
+5. 
 Prediction: The trained model is used to generate predictions (y_pred) on the scaled test set (X_test).
 
 Inverse Transformation: The scaled predictions (y_pred) and the scaled true values (y_test) are converted back to their original dollar scale using the inverse transformation of the scaler object.
